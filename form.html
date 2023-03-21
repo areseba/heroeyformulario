@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner-top"><p class="txt-banner">Descuentos 20%</p></section>
+    <header class="header-top">
+        <img src="img/Logo1.png" alt="tienda">
+        <h1 class="titulo-principal">Nombre Tienda</h1>
+    </header>
+        <section class="contenedor-menu">
+            <nav class="menu">
+                <ul class="lista-menu">
+                    <li>
+                        <span>Contacto</span>
+                    </li>
+                    <li>
+                        <span>Registrarme</span>
+                    </li>
+                    <li>
+                        <span>Ingresar</span>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    <main>
+        <section class="formulario">
+            <h2 class="titulo">Añadi tu super!</h2>
+            <p class="subtitulo">Agrega tu personaje favorito completando las opciones</p>
+            <article class="cajaformulario">
+                <article class="caja1">
+                    <label class="nombre" for="nombre">* Nombre</label>
+                        <input  class="nombreformulario" type="text" name="nombre" id="nombre" required placeholder="Sebastián Areellano">
+                    <label class="fecha" for="date">Fecha</label>
+                        <input class="date" type="date" name="date" id="date" value="2023-03-20" min="1950-01-01">
+                    <textarea  name="descripcion" id="descripcion" placeholder="Descripcion"></textarea>
+                </article>
+                <article class="caja2">
+                    <label class="especie" for="especie">* Especie</label>
+                        <select class="especie-opcion" name="especie" id="especie">
+                                <option value="hombre">Alienigena</option>
+                                <option value="mujer">Humano</option>
+                        </select>
+                        <div>
+                        <label  class="foto" for="imagen">Agregar Foto</label>
+                        <input class="foto-opcion" type="file" name="imagen" id="imagen" accept=".jpeg, .png, .pdf"/>
+                        </div>
+                    <label class="poderes" for="Poderes">Poderes</label>
+                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="volar"> Volar
+                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="super fuerza">Super fuerza
+                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="invisibilidad">Invisibilidad
+                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="ser rico">Ser Rico
+                    <hr>
+                    <label class="tipo" for="tipo"> Tipo de Personaje</label>
+                        <input class="opcion" type="radio" name="tipo" id="tipo" value="Heroe">Héroe / Heroina
+                        <input class="opcion" type="radio" name="tipo" id="tipo" value="Villano">Villano / Villana
+                </article>
+            </article>
+            <button class="añadir" type="submit">Añadir</button>
+        </section>
+        </main>
+    <footer class="pie">
+        <p class="txt-final">Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
