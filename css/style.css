@@ -135,6 +135,15 @@
     top: 95vh;
     width: 50px;
 }
+
+.plus:hover { 
+    background: #001D2D; 
+}
+
+.plus:active { 
+    background: #001D2D;  
+} 
+
 .pie {
     align-items: center;
     background-color: #00669F;
@@ -282,6 +291,21 @@ textarea{
     font-weight: 700;
     color: #000000;
 }
+
+input:focus {
+    background-color:aquamarine;
+}
+
+.añadir:hover { 
+    background: #001D2D; 
+    color: white; 
+} 
+
+.añadir:active { 
+    background: #001D2D; 
+    color: white; 
+} 
+
 @media screen and (max-width: 768px){
 .noticias {
     flex-wrap: wrap;
