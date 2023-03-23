@@ -29,43 +29,61 @@
             </nav>
         </section>
     <main>
-        <section class="formulario">
+        <section >
+            <div class="formulario">
             <h2 class="titulo">Añadi tu super!</h2>
             <p class="subtitulo">Agrega tu personaje favorito completando las opciones</p>
-            <article class="cajaformulario">
-                <article class="caja1">
+            <form action="">
+            <div class="cajaformulario">
+                <div class="caja">
                     <label class="nombre" for="nombre">* Nombre</label>
                         <input  class="nombreformulario" type="text" name="nombre" id="nombre" required placeholder="Sebastián Areellano">
                     <label class="fecha" for="date">Fecha</label>
-                        <input class="date" type="date" name="date" id="date" value="2023-03-20" min="1950-01-01">
+                        <input class="date" type="date" name="date" id="date" value="2023-03-20" min="1950-01-01" required>
                     <textarea  name="descripcion" id="descripcion" placeholder="Descripcion"></textarea>
-                </article>
-                <article class="caja2">
+                </div>
+                <div class="caja">
                     <label class="especie" for="especie">* Especie</label>
                         <select class="especie-opcion" name="especie" id="especie">
                                 <option value="hombre">Alienigena</option>
                                 <option value="mujer">Humano</option>
                         </select>
-                        <div>
                         <label  class="foto" for="imagen">Agregar Foto</label>
                         <input class="foto-opcion" type="file" name="imagen" id="imagen" accept=".jpeg, .png, .pdf"/>
+                        <div>
+                            <label class="poderes" for="poder">Poderes</label>
+                            <label for="volar" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="volar">Volar
+                            </label>
+                            <label for="superinteligencia" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="superinteligencia">Superinteligencia
+                            </label>
+                            <label for="laser" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="laser">Vista de rayo láser
+                            </label>
+                            <label for="billetera" class="espacio">
+                                <input class="checkbox" type="checkbox" name="poderes" id="billetera">Billetera gorda
+                            </label>
                         </div>
-                    <label class="poderes" for="Poderes">Poderes</label>
-                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="volar"> Volar
-                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="super fuerza">Super fuerza
-                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="invisibilidad">Invisibilidad
-                    <input class="checkbox" type="checkbox" name="poderes" id="poderes" value="ser rico">Ser Rico
-                    <hr>
-                    <label class="tipo" for="tipo"> Tipo de Personaje</label>
-                        <input class="opcion" type="radio" name="tipo" id="tipo" value="Heroe">Héroe / Heroina
-                        <input class="opcion" type="radio" name="tipo" id="tipo" value="Villano">Villano / Villana
-                </article>
-            </article>
-            <button class="añadir" type="submit">Añadir</button>
+                        <hr>
+                        <div>
+                            <label for="personaje">Tipo de personaje</label>
+                            <label for="heroe" class="espacio"> 
+                                <input class="option" type="radio" name="tipo" id="heroe"> Héroe / Heroína</label>
+                            <label for="villano" class="espacio">
+                                <input class="option" type="radio" name="tipo" id="villano"> Villano / Villana</label>
+                        </div>
+                </div>
+            </div>
+                <div class="caja-boton">
+                <button class="añadir" type="submit">Añadir</button>
+                </div>
+            </form>
+            </div>
         </section>
-        </main>
+    </main>
     <footer class="pie">
         <p class="txt-final">Todos los derechos reservados a FRONT END 1</p>
-    </footer>
+    </footer> 
 </body>
 </html>
