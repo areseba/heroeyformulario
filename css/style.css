@@ -226,6 +226,7 @@ textarea{
     padding: 20px 5px;
     border-radius: 10px;
     border: 0;
+    font-size: 18px;
 }
 .foto{
     margin-bottom: 9%;
@@ -271,6 +272,12 @@ textarea{
 input:focus {
     background-color:aquamarine;
 }
+select:focus{
+    background-color:aquamarine;
+}
+input[type="checkbox"]:checked{
+    accent-color: aquamarine;
+}
 .añadir:hover { 
     background: #001D2D; 
     color: white; 
@@ -281,11 +288,10 @@ input:focus {
 } 
 @media screen and (max-width: 820px){
 .noticias {
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-content: space-around;
-   justify-content: space-evenly;
-   
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
 }
 .articulo-heroe {
     margin: 20px 0;
